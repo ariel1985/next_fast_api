@@ -16,7 +16,9 @@ export default function Home() {
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+
       <h1>Upload File Demo for next & fast API</h1>
+
       {/* Input field with onChange to update state */}
       <input
         type="text"
@@ -25,6 +27,7 @@ export default function Home() {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)} // Update state on input change
       />
+      
       {/* Input file upload  */}
       <input
         type="file"

@@ -51,6 +51,14 @@ This project demonstrates a simple integration between a React-based frontend an
     cd backend
     uvicorn main:app --reload
     ```
+    To test:
+    ```bash
+    curl -X POST "http://localhost:8000/upload/" -F "file=@/home/username/image.png"
+    ```
+    Replace `path_to_your_video_file` with the absolute or relative path to a video file on your system. For example, if the video file is in the same directory as the backend folder, you can use a relative path like `./example_video.mp4`.
+    You should see a response indicating the file was uploaded successfully.
+    `
+
 6. Start the frontend server:
     ```bash
     cd frontend
