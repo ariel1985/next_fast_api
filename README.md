@@ -38,6 +38,10 @@ This project demonstrates a simple integration between a React-based frontend an
     cd backend
     pip install -r requirements.txt
     ```
+    or 
+    ```bash
+    pip install fastapi uvicorn
+    ```
 4. Create a directory for uploaded videos:
     ```bash
     mkdir data
